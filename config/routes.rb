@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'store/index'
+
   resources :products
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -15,6 +17,7 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  root'store#index', as: 'store'
 
   # Example resource route with options:
   #   resources :products do
